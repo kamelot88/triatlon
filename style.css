@@ -381,6 +381,7 @@ h2 {
     background-color: #ffffff;
     position: absolute;
     right: 0;
+    display: none;
 }
 .logo_dtek img {
     width: auto;
@@ -392,6 +393,7 @@ h2 {
   margin-top: 10px;
   margin-right: 55px;
   z-index: 9;
+  display: block;
 }
 .logo_md {
     width: auto;
