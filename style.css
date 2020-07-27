@@ -317,6 +317,7 @@ header {
 }
 .hamburger {
   height: 3.5vh;
+  z-index: 7;
 }
 .hamburger .l1, .hamburger .l2, .hamburger .l3 {
   width: 30px;
@@ -324,10 +325,23 @@ header {
   border-radius: 5px;
   background-color: #FFFFFF;;
 }
-
+.navigation {
+  display: none;
+}
+.other {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px 10px 0 0;
+}
 nav {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-content: center;
   height: 56.5vh;
-  width: 40vw;
+  width: 45vw;
+  font-size: 4.5vw;
   background-color: #212121;
   position: absolute;
   right: 0;
@@ -338,6 +352,13 @@ nav {
 }
 nav li {
   text-align: center;
+}
+nav li:nth-child(1) {
+  margin-top: 40px;
+}
+nav li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 #main {
     width: 72vw;
@@ -364,6 +385,13 @@ h2 {
 .logo_dtek img {
     width: auto;
     height: 3.5vh;
+}
+.other2 {
+  position: absolute;
+  top: 0;
+  margin-top: 10px;
+  margin-right: 55px;
+  z-index: 9;
 }
 .logo_md {
     width: auto;
