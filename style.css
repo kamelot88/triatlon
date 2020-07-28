@@ -310,9 +310,13 @@ body {
 .col_white {
         color: #ffffff;
     }
+    @media (min-width: 768px) and (max-width: 1020px) {}
+    
+    
+    @media (min-width: 375px) and (max-width: 767px) {
 header {
     width: 100vw;
-    height: 13vh;
+    height: auto;
     background-color: #212121;
 }
 .hamburger {
@@ -339,10 +343,10 @@ nav {
   flex-flow: column wrap;
   justify-content: space-around;
   align-content: center;
-  height: 56.5vh;
+  height: 50.5vh;
   width: 45vw;
   font-size: 4.5vw;
-  background-color: #212121;
+  background-color: #030303;
   position: absolute;
   right: 0;
   top: 0;
@@ -362,6 +366,7 @@ nav li a {
 }
 #main {
     width: 72vw;
+    margin: 2.5vh 0 2.5vh 0;
    /* height: 6.3vh; */
 }  
 .logo h1{
@@ -402,15 +407,36 @@ h2 {
 }
 .nedra {
     width: 100%;
-    height: 45vh;
-    overflow: hidden;
+    height: auto;
 }
 .nedra img {
     max-width: 100%;
-    
+}
+.rotation {
+  -moz-transform: rotate(90deg); /* Для Firefox */
+  -ms-transform: rotate(90deg); /* Для IE */
+  -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(90deg); /* Для Opera */
+  transform: rotate(90deg);
+}
+#information {
+  width: auto;
+}
+#information img {
+  height: 10vh;
+  width: auto;
+}
+#information div {
+  width: 100%;
+  margin-bottom: 2vh;
+  padding: 0 10vw 0 10vw;
+}
+#information p {
+  width: 65%;
 }
 
 
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Noto Sans JP', sans-serif;
-font-family: 'Open Sans', sans-serif; */
+
+
+
+}
