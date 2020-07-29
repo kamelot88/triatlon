@@ -347,7 +347,7 @@ nav {
   height: 50.5vh;
   width: 45vw;
   font-size: 4.5vw;
-  background-color: #030303;
+  background-color: rgb(3, 3, 3, .9);
   position: absolute;
   right: 0;
   top: 0;
