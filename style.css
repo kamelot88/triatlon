@@ -316,8 +316,7 @@ body {
     @media (min-width: 375px) and (max-width: 767px) {}
     
 header {
-    width: 100vw;
-    height: auto;
+    height: 13vh;
     background-color: #212121;
 }
 .hamburger {
@@ -330,14 +329,15 @@ header {
   border-radius: 5px;
   background-color: #FFFFFF;;
 }
+.rotation {
+  -moz-transform: rotate(90deg); /* Для Firefox */
+  -ms-transform: rotate(90deg); /* Для IE */
+  -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(90deg); /* Для Opera */
+  transform: rotate(90deg);
+}
 .navigation {
   display: none;
-}
-.other {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 10px 10px 0 0;
 }
 nav {
   display: flex;
@@ -358,23 +358,27 @@ nav {
 nav li {
   text-align: center;
 }
-nav li:nth-child(1) {
+/* nav li:nth-child(1) {
   margin-top: 40px;
-}
+} */
 nav li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
 #main {
-    width: 72vw;
-    margin: 2.5vh 0 2.5vh 0;
-   /* height: 6.3vh; */
+    width: 75vw;
 }  
+#main div {
+  padding-right: 2vw;
+}
 .logo h1{
     color: #ff3448;
     font-size: 7vw;
     font-weight: 900;
     letter-spacing: .05em;
+}
+.logo h2 {
+  font-size: 3vw;
 }
 h2 {
     font-size: 2.5vw;
@@ -382,22 +386,24 @@ h2 {
     text-transform: uppercase;
     letter-spacing: .05em;
 }
+.logo_miner {
+  z-index: 9;
+  height: 6vh;
+} 
 .logo_dtek {
-    z-index: 5;
-    background-color: #ffffff;
-    position: absolute;
-    right: 0;
     display: none;
+    width: auto;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 65px;
+    height: 3.5vh;
+    overflow: hidden;
 }
 .logo_dtek img {
     width: auto;
     height: 3.5vh;
 }
 .other2 {
-  position: absolute;
-  top: 0;
-  margin-top: 10px;
-  margin-right: 55px;
   z-index: 9;
   display: block;
 }
@@ -413,31 +419,85 @@ h2 {
 .nedra img {
     max-width: 100%;
 }
-.rotation {
-  -moz-transform: rotate(90deg); /* Для Firefox */
-  -ms-transform: rotate(90deg); /* Для IE */
-  -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
-  -o-transform: rotate(90deg); /* Для Opera */
-  transform: rotate(90deg);
-}
 #information {
-  width: auto;
-}
-#information img {
-  height: 10vh;
-  width: auto;
-}
-#information div {
   width: 100%;
+}
+#information div img {
+  height: 8vh;
+  width: auto;
+}
+#information div, #rules div {
+  width: 80vw;
   margin-bottom: 2vh;
-  padding: 0 10vw 0 10vw;
 }
 #information p {
-  width: 65%;
+  width: 70%;
+  font-size: 4.5vw;
 }
-
-
-
-
-
-
+#rules {
+  color: #ffffff;
+  background-color: #303030;
+  padding-top: 3vh;
+  width: 100%;
+}
+#rules h2{
+  text-align: center;
+  font-size: 6vw;
+}
+#rules div img {
+  width: 72px;
+}
+#rules div p {
+}
+#contakt {
+  padding-top: 3vh;
+  background-color: #f0c33d;
+}
+#contakt h2{
+  text-align: center;
+  font-size: 7vw;
+}
+#contakt h3{
+  text-align: center;
+  font-weight: 500;
+}
+#contakt .bolt {
+  font-weight: 700;
+}
+#contakt div {
+  width: auto;
+  margin-bottom: 2vh;
+}
+#contakt div img {
+  /* height: 5vh; */
+  width: 11vw;
+}
+#contakt button {
+  height: 7vh;
+  width: 42vw;
+  margin: 0 auto;
+  border-radius: 15px;
+  font-size: 4vw;
+}
+#contakt p {
+  margin-top: 2vh;
+  text-align:  center;
+}
+#contakt a {
+  text-decoration: none;
+  color: #030303;
+  font-size: 6vw;
+}
+#contakt img {
+  height: 7vh;
+  margin-right: 2vw;
+}
+#contakt .end {
+  margin-top: 0;
+}
+footer {
+  background-color: #0d0c0c;
+  height: 11vh;
+  padding: 0 8vw 0 8vw;
+  color: #ffffff;
+}

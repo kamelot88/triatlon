@@ -2,7 +2,7 @@ var hamburger = document.querySelector("#main > div.hamburger.main_flex_column.f
 
 var nav = document.querySelector("body > header > div.navigation");
 
-var logo = document.querySelector("body > div > div");
+var logo = document.querySelector("body > header > div.navigation > nav > div");
 
 hamburger.addEventListener('click', function () {
     if (nav.style.display === 'block') {
