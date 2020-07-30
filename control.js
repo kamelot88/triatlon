@@ -23,3 +23,21 @@ hamburger.addEventListener('click', function () {
     }
 });
 
+var buttonForm = document.querySelector("#contakt > button");
+
+var closed = document.querySelector("#close_modal");
+var modalBox = document.querySelector("#modal_box");
+var blackFill = document.querySelector("#black_fill");
+
+buttonForm.onsubmit = function (evt) {
+    evt.preventDefault();
+    modalBox.style.display === 'block';
+    blackFill.style.display === 'block';
+};
+
+
+
+closed.addEventListener('click', function () {
+    modalBox.style.display === 'none';
+});
+

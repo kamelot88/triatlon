@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bold.eot");
+  src: url("../fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Lato-Bold.woff2") format("woff2"),
+    url("../fonts/Lato-Bold.woff") format("woff"),
+    url("../fonts/Lato-Bold.ttf") format("truetype"),
+    url("../fonts/Lato-Bold.svg#Lato-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
 /*Flex Framework*/
 .main_flex {
     display: flex;
@@ -305,7 +317,7 @@
 
     /* Начало общих стилей*/
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Lato - Bold", sans-serif;
 }
 .col_white {
         color: #ffffff;
@@ -543,3 +555,93 @@ footer .small {
 footer img {
   height: 6vh;
 }
+/* Начало стилей для формы отправки коментария */
+#black_fill {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+#modal_box {
+  position: fixed;
+  top: 20vh;
+  width: 50%;
+  left: calc(50% - 25vw);
+  z-index: 51;
+  display: none;
+}
+#close_modal {
+  width: 4vw;
+  height: 4vw;
+  fill: #fff;
+  position: absolute;
+  top: -6vw;
+  right: -6vw;
+  cursor: pointer;
+}
+.login_box {
+  width: 100%;
+  height: 40vh;
+  background-color: rgba(0, 0, 0, 0.774);
+  border-radius: 4vw;
+}
+.login_box form {
+  padding: 32px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.form a {
+  color: #ffc61a;
+}
+.login_label {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 22px;
+}
+.input {
+  width: 100%;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.input textarea {
+  height: 15vh;
+  width: 60%;
+  border-radius: 16px;
+  background-color: rgba(195, 195, 195, 1.00);
+  transition: all 35ms linear;
+  border: none;
+  text-align: center;
+}
+.input button {
+  width: 30%;
+}
+.input textarea:focus {
+  transform: scale(1.05);
+  outline: rgba(255, 162, 84, 1.00);
+  background-color: #fff;
+  transition: all 35ms linear;
+}
+.input button:hover {
+  transition: all 35ms linear;
+  transform: scale(1.05);
+}
+.btn1 {
+  border: none;
+  cursor: pointer;
+}
+.send {
+  background-color: rgba(244, 115, 41, 1.00);
+  color: #fff;
+  height: 32px;
+  border-radius: 16px;
+  width: 80%;
+  transition: all 35ms linear;
+}
+/* Конец стилей для формы отправки коментария */
