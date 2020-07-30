@@ -306,7 +306,7 @@
     /* Начало общих стилей*/
 body {
     font-family: 'Roboto', sans-serif;
-        }
+}
 .col_white {
         color: #ffffff;
     }
@@ -317,7 +317,10 @@ body {
     
 header {
     height: 13vh;
+    width: 100%;
     background-color: #212121;
+    position: fixed;
+    margin-top: -13vh;
 }
 .hamburger {
   height: 3.5vh;
@@ -391,6 +394,11 @@ h2 {
   height: 6vh;
   width: 8.5vw;
 } 
+.logo_miner:hover {
+    transform: scale(0.9);
+    transition: all 0.75s ease;
+    /* transform: skewX(15deg); */
+}
 .logo_dtek {
     display: none;
     width: auto;
@@ -416,9 +424,13 @@ h2 {
 .nedra {
     width: 100%;
     height: auto;
+    margin-top: 13vh;
+    
 }
 .nedra img {
     max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 #information {
   width: 100%;
@@ -444,13 +456,31 @@ h2 {
 #rules h2{
   text-align: center;
   font-size: 7vw;
+  text-shadow: 0 0 5px black;
   
 }
-#rules img {
-  
+#rules div {
+  width: 80vw;
 }
-#rules div p {
+#rules div img {
+  width: 15vw;
+  border-radius: 50%;
+  margin-right: 3vw;
 }
+#rules div img:hover {
+  transition: all 0.75s ease;
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -o-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+}
+
 #contakt {
   padding-top: 3vh;
   background-color: #f0c33d;
@@ -458,6 +488,8 @@ h2 {
 #contakt h2{
   text-align: center;
   font-size: 7vw;
+  font-weight: 700;
+  text-shadow: 0 0 2px black;
 }
 #contakt h3{
   text-align: center;
@@ -489,6 +521,7 @@ h2 {
   text-decoration: none;
   color: #030303;
   font-size: 6vw;
+  font-weight: 700;
 }
 #contakt img {
   height: 7vh;
@@ -502,8 +535,11 @@ footer {
   height: 12vh;
   padding: 0 8vw 0 8vw;
   color: #ffffff;
-  font-size: 2.5vw;
+  font-size: 3.5vw;
 }
 footer .small {
   font-size: 2vw;
+}
+footer img {
+  height: 6vh;
 }
