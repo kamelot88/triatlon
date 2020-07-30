@@ -24,20 +24,19 @@ hamburger.addEventListener('click', function () {
 });
 
 var buttonForm = document.querySelector("#contakt > button");
-
 var closed = document.querySelector("#close_modal");
+
 var modalBox = document.querySelector("#modal_box");
 var blackFill = document.querySelector("#black_fill");
 
-buttonForm.onsubmit = function (evt) {
-    evt.preventDefault();
-    modalBox.style.display === 'block';
+
+buttonForm.onclick = function () {
     blackFill.style.display === 'block';
+    modalBox.style.display === 'block';
 };
-
-
-
-closed.addEventListener('click', function () {
+// modalBox.style.display === 'block';
+//     blackFill.style.display === 'block';
+closed.onclick = function () {
     modalBox.style.display === 'none';
-});
-
+    blackFill.style.display === 'none';
+};
