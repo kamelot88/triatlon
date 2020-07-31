@@ -23,20 +23,25 @@ hamburger.addEventListener('click', function () {
     }
 });
 
-var buttonForm = document.querySelector("#contakt > button");
+var buttonForm = document.querySelector("#contakt > form > button");
 var closed = document.querySelector("#close_modal");
 
 var modalBox = document.querySelector("#modal_box");
 var blackFill = document.querySelector("#black_fill");
 
 
-buttonForm.onclick = function () {
-    blackFill.style.display === 'block';
-    modalBox.style.display === 'block';
-};
-// modalBox.style.display === 'block';
+// buttonForm.onclick = function () {
 //     blackFill.style.display === 'block';
-closed.onclick = function () {
-    modalBox.style.display === 'none';
-    blackFill.style.display === 'none';
+//     modalBox.style.display === 'block';
+// };
+// // modalBox.style.display === 'block';
+// //     blackFill.style.display === 'block';
+// closed.onclick = function () {
+//     modalBox.style.display === 'none';
+//     blackFill.style.display === 'none';
+// };
+
+
+buttonForm.onclick = function () {
+    modalBox.style.display === 'block';
 };
