@@ -479,6 +479,7 @@ h2 {
 }
 #rules p {
   margin: 0 4vw 0 4vw;
+  text-indent: 6vw;
 }
 .pullUp, .burpee {
   background-color: #303030;
@@ -562,6 +563,9 @@ footer .small {
 }
 footer img {
   height: 6vh;
+}
+.cop p {
+  line-height: 35%;
 }
 /* Начало стилей для формы регистрации */
 #black_fill {
