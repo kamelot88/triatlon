@@ -5,9 +5,12 @@ var nav = document.querySelector("body > header > div.navigation");
 
 var logo = document.querySelector("body > header > div.navigation > nav > div");
 
+var whiteFill = document.querySelector("#white_fill");
+
 hamburger.addEventListener('click', function () {
     if (nav.style.display === 'block') {
         nav.style.display = 'none';
+        whiteFill.style.display = 'none';
         hamburger.classList.remove('other');
         hamburger.classList.remove('rotation');
         logo.classList.remove('other2');
@@ -15,6 +18,7 @@ hamburger.addEventListener('click', function () {
         // logo.style.marginLeft = 'calc(50% - 70px)';
     } else {
         nav.style.display = 'block';
+        whiteFill.style.display = 'block';
         hamburger.classList.add('other');
         hamburger.classList.add('rotation');
         logo.classList.add('other2');
@@ -22,6 +26,14 @@ hamburger.addEventListener('click', function () {
         // hamburger.classList.add('rotation');
         // logo.style.marginLeft = '30px';
     }
+});
+
+whiteFill.addEventListener('click', function () {
+    nav.style.display = 'none';
+    whiteFill.style.display = 'none';
+    hamburger.classList.remove('other');
+    hamburger.classList.remove('rotation');
+    logo.classList.remove('other2');
 });
 // конец скрипта открытия/закрытия бургер-меню
 

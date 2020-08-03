@@ -337,6 +337,7 @@ header {
 .hamburger {
   height: 3.5vh;
   z-index: 7;
+  z-index: 16;
 }
 .hamburger .l1, .hamburger .l2, .hamburger .l3 {
   width: 30px;
@@ -353,6 +354,7 @@ header {
 }
 .navigation {
   display: none;
+  z-index: 16;
 }
 nav {
   display: flex;
@@ -366,7 +368,7 @@ nav {
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 6;
+  z-index: 16;
   box-shadow:  0 0 12px 14px black;
   border-radius: 3px;
 }
@@ -562,10 +564,20 @@ footer img {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 20;
+  z-index: 15;
   background-color: rgba(0, 0, 0, 0.8);
   display: none;
 }
+  #white_fill {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    background-color: rgba(0, 0, 0, 0);
+    display: none;  
+  }
 #modal_box {
   display: none;
   position: fixed;
@@ -621,7 +633,7 @@ footer img {
   text-align: center;
 }
 .input button {
-  width: 50%;
+  width: 55%;
 }
 .input input:focus {
   transform: scale(1.05);
@@ -640,7 +652,7 @@ footer img {
 .send {
   background-color: rgba(244, 115, 41, 1.00);
   color: #fff;
-  height: 5vh;
+  height: 7vh;
   border-radius: 16px;
   width: 90%;
   transition: all 35ms linear;
