@@ -453,7 +453,7 @@ h2 {
   height: 8vh;
   width: auto;
 }
-#information div, #rules div {
+#information div {
   width: 80vw;
   margin-bottom: 2vh;
 }
@@ -463,18 +463,25 @@ h2 {
 }
 #rules {
   color: #ffffff;
-  background-color: #303030;
-  padding: 3vh 8vw 0 8vw;
+  background-color: #1c1c1c;
+  padding: 5vh 8vw 0 8vw;
   width: 100%;
 }
 #rules h2{
   text-align: center;
+  font-weight: 700;
   font-size: 7vw;
-  text-shadow: 0 0 5px black;
-  
+  text-shadow: 0 0 17px rgb(253, 246, 246);
 }
 #rules div {
-  width: 80vw;
+  width: 100vw;
+  padding: 2.5vh 4vw 2.5vh 4vw;
+}
+#rules p {
+  margin: 0 4vw 0 4vw;
+}
+.pullUp, .burpee {
+  background-color: #303030;
 }
 #rules div img {
   width: 15vw;
@@ -494,7 +501,6 @@ h2 {
     -o-transform: rotate(-360deg);
     -ms-transform: rotate(-360deg);
 }
-
 #contakt {
   padding-top: 3vh;
   background-color: #f0c33d;
@@ -582,8 +588,8 @@ footer img {
   display: none;
   position: fixed;
   top: 20vh;
-  width: 70%;
-  left: calc(50% - 35vw);
+  width: 80%;
+  left: calc(50% - 40vw);
   z-index: 21;
 }
 #close_modal {
@@ -625,7 +631,7 @@ footer img {
 }
 .input input, .select select {
   height: 5vh;
-  width: 90%;
+  width: 100%;
   border-radius: 16px;
   background-color: rgba(195, 195, 195, 1.00);
   transition: all 35ms linear;
