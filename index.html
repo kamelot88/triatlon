@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -103,9 +103,7 @@
         <div class=" main_flex flex__jcontent_center">
             <img src="img/hotpng.com.png" alt="">
         </div>
-        <form method="">
-            <button>Зарегистрироваться</button>
-        </form>
+        <button>Зарегистрироваться</button>
         <br>
         <h3 class="bolt">или</h3>
         <p>зайди в кабинет №306 <br> шахты "Западно-Донбасская" <br> (спросить Марию)
@@ -149,17 +147,55 @@
             </svg>
         </div>
 
-        <div class="login_box main_flex flex__jcontent_center flex__align-items_center">
+        <div class="login_box main_flex flex__jcontent_around flex__align-items_center">
             <form method="post" class="main_flex_column_nw flex__jcontent_center flex__align-items_center">
                 <div class="login_label">
-                    Оставить отзыв
+                    Регистрация участника
+                </div>
+                <div class="select">
+                    <select size="1" required>
+                        <option>Выбери свой участок</option>
+                        <option value="">№1</option>
+                        <option value="">№2</option>
+                        <option value="">№3</option>
+                        <option value="">№5</option>
+                        <option value="">№6</option>
+                        <option value="">ПР-1</option>
+                        <option value="">ПР-2</option>
+                        <option value="">ПР-3</option>
+                        <option value="">ПР-4</option>
+                        <option value="">ПР-5</option>
+                        <option value="">ПР-6</option>
+                        <option value="">КТ-1</option>
+                        <option value="">КТ-2</option>
+                        <option value="">КТ-3</option>
+                        <option value="">ШТ-1</option>
+                        <option value="">ШТ-2</option>
+                        <option value="">ШТ-3</option>
+                        <option value="">РВР-1</option>
+                        <option value="">СО-1</option>
+                        <option value="">СО-2</option>
+                        <option value="">СО-3</option>
+                        <option value="">ВТБ-1</option>
+                        <option value="">ВТБ-2</option>
+                        <option value="">ПЭиРЭ</option>
+                        <option value="">АСиИТ</option>
+                        <option value="">ППиМС</option>
+                        <option value="">ТКП-1</option>
+                        <option value="">ТКП-2</option>
+                        <option value="">РЗО</option>
+                        <option value="">Аппарат управления</option>
+                    </select>
                 </div>
                 <div class="input">
-                    <textarea rows="5" name="message" maxlength="165" placeholder="Введите сообщение"></textarea>
+                    <input name="name" maxlength="165" placeholder="Введи своё Ф.И.О."></input>
+                </div>
+                <div class="input">
+                    <input name="message" maxlength="165" placeholder="Номер твоего мобильного"></input>
                 </div>
                 <div class="input">
                     <button type="submit" name="send" class="btn1 send" id="comment-add">
-                        отправить отзыв
+                        отправить данные
                     </button>
                 </div>
             </form>

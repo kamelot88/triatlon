@@ -1,3 +1,4 @@
+// начало скрипта бургер-меню
 var hamburger = document.querySelector("#main > div.hamburger.main_flex_column.flex__jcontent_between");
 
 var nav = document.querySelector("body > header > div.navigation");
@@ -22,26 +23,23 @@ hamburger.addEventListener('click', function () {
         // logo.style.marginLeft = '30px';
     }
 });
+// конец скрипта открытия/закрытия бургер-меню
 
-var buttonForm = document.querySelector("#contakt > form > button");
-var closed = document.querySelector("#close_modal");
+// начало скрипта формы регистрации
 
+var buttonForm = document.querySelector("#contakt > button");
 var modalBox = document.querySelector("#modal_box");
 var blackFill = document.querySelector("#black_fill");
+var closeD = document.querySelector("#close_modal");
 
+buttonForm.addEventListener('click', function () {
+    modalBox.style.display = 'block';
+    blackFill.style.display = 'block';
+});
 
-// buttonForm.onclick = function () {
-//     blackFill.style.display === 'block';
-//     modalBox.style.display === 'block';
-// };
-// // modalBox.style.display === 'block';
-// //     blackFill.style.display === 'block';
-// closed.onclick = function () {
-//     modalBox.style.display === 'none';
-//     blackFill.style.display === 'none';
-// };
+closeD.addEventListener('click', function () {
+    modalBox.style.display = 'none';
+    blackFill.style.display = 'none';
+});
 
-
-buttonForm.onclick = function () {
-    modalBox.style.display === 'block';
-};
+// конец скрипта формы регистрации

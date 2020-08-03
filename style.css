@@ -555,45 +555,46 @@ footer .small {
 footer img {
   height: 6vh;
 }
-/* Начало стилей для формы отправки коментария */
+/* Начало стилей для формы регистрации */
 #black_fill {
   width: 100%;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 50;
+  z-index: 20;
   background-color: rgba(0, 0, 0, 0.8);
   display: none;
 }
 #modal_box {
+  display: none;
   position: fixed;
   top: 20vh;
-  width: 50%;
-  left: calc(50% - 25vw);
-  z-index: 51;
-  display: none;
+  width: 70%;
+  left: calc(50% - 35vw);
+  z-index: 21;
 }
 #close_modal {
-  width: 4vw;
-  height: 4vw;
+  width: 6vw;
+  height: 6vw;
   fill: #fff;
   position: absolute;
   top: -6vw;
   right: -6vw;
   cursor: pointer;
+  z-index: 21;
 }
 .login_box {
   width: 100%;
-  height: 40vh;
+  height: 60vh;
   background-color: rgba(0, 0, 0, 0.774);
-  border-radius: 4vw;
+  border-radius: 30px;
 }
 .login_box form {
   padding: 32px;
   background-color: rgba(0, 0, 0, 0.9);
   color: #fff;
-  border-radius: 10px;
+  border-radius: 30px;
   width: 100%;
   height: 100%;
 }
@@ -602,17 +603,17 @@ footer img {
 }
 .login_label {
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 5vh;
   font-size: 22px;
 }
-.input {
+.input, .select {
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 5vh;
   text-align: center;
 }
-.input textarea {
-  height: 15vh;
-  width: 60%;
+.input input, .select select {
+  height: 5vh;
+  width: 90%;
   border-radius: 16px;
   background-color: rgba(195, 195, 195, 1.00);
   transition: all 35ms linear;
@@ -620,9 +621,9 @@ footer img {
   text-align: center;
 }
 .input button {
-  width: 30%;
+  width: 50%;
 }
-.input textarea:focus {
+.input input:focus {
   transform: scale(1.05);
   outline: rgba(255, 162, 84, 1.00);
   background-color: #fff;
@@ -639,9 +640,9 @@ footer img {
 .send {
   background-color: rgba(244, 115, 41, 1.00);
   color: #fff;
-  height: 32px;
+  height: 5vh;
   border-radius: 16px;
-  width: 80%;
+  width: 90%;
   transition: all 35ms linear;
 }
 /* Конец стилей для формы отправки коментария */
