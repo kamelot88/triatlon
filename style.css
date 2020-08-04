@@ -489,7 +489,7 @@ h2 {
   border-radius: 50%;
   margin-right: 3vw;
 }
-/* #rules div img:hover {
+#rules div img:hover {
   transition: all 0.75s ease;
     transform-origin: center center;
     -webkit-transform-origin: center center;
@@ -501,7 +501,7 @@ h2 {
     -moz-transform: rotate(-360deg);
     -o-transform: rotate(-360deg);
     -ms-transform: rotate(-360deg);
-} */
+}
 
 .effekt {
   transition: all 0.75s ease;

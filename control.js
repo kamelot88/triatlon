@@ -76,7 +76,7 @@ window.onscroll = function () {
         bruss.classList.add('effekt');
         burpee.classList.remove('effekt');
     }
-    if (scrollTop >= 1370 && scrollTop < 1650) {
+    if (scrollTop >= 1450 && scrollTop < 1650) {
         pullUp.classList.remove('effekt');
         bruss.classList.remove('effekt');
         burpee.classList.add('effekt');
