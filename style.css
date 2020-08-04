@@ -489,7 +489,21 @@ h2 {
   border-radius: 50%;
   margin-right: 3vw;
 }
-#rules div img:hover {
+/* #rules div img:hover {
+  transition: all 0.75s ease;
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -o-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+} */
+
+.effekt {
   transition: all 0.75s ease;
     transform-origin: center center;
     -webkit-transform-origin: center center;
@@ -502,6 +516,7 @@ h2 {
     -o-transform: rotate(-360deg);
     -ms-transform: rotate(-360deg);
 }
+
 #contakt {
   padding-top: 3vh;
   background-color: #f0c33d;
@@ -591,7 +606,7 @@ footer img {
 #modal_box {
   display: none;
   position: fixed;
-  top: 20vh;
+  top: 15vh;
   width: 80%;
   left: calc(50% - 40vw);
   z-index: 21;
@@ -608,7 +623,7 @@ footer img {
 }
 .login_box {
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   background-color: rgba(0, 0, 0, 0.774);
   border-radius: 30px;
 }

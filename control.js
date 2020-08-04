@@ -55,3 +55,32 @@ closeD.addEventListener('click', function () {
 });
 
 // конец скрипта формы регистрации
+
+
+// скрипт врещения изображений блока rules при прокрутке 
+
+var pullUp = document.querySelector("#rules > div.pullUp.main_flex__nowrap.flex__jcontent_between.flex__align-items_center > img");
+var bruss = document.querySelector("#rules > div:nth-child(6) > img");
+var burpee = document.querySelector("#rules > div.burpee.main_flex__nowrap.flex__jcontent_between.flex__align-items_center > img");
+
+var scrollTop = window.pageYOffset;
+window.onscroll = function () {
+    var scrollTop = window.pageYOffset;
+    if (scrollTop >= 1100 && scrollTop < 1200) {
+        pullUp.classList.add('effekt');
+        bruss.classList.remove('effekt');
+        burpee.classList.remove('effekt');
+    }
+    if (scrollTop >= 1200 && scrollTop < 1370) {
+        pullUp.classList.remove('effekt');
+        bruss.classList.add('effekt');
+        burpee.classList.remove('effekt');
+    }
+    if (scrollTop >= 1370 && scrollTop < 1650) {
+        pullUp.classList.remove('effekt');
+        bruss.classList.remove('effekt');
+        burpee.classList.add('effekt');
+    }
+}
+
+// конец скрипта врещения изображений блока rules при прокрутке 
