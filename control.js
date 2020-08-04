@@ -81,6 +81,11 @@ window.onscroll = function () {
         bruss.classList.remove('effekt');
         burpee.classList.add('effekt');
     }
+    if (scrollTop > 1100 && scrollTop > 1650) {
+        pullUp.classList.remove('effekt');
+        bruss.classList.remove('effekt');
+        burpee.classList.remove('effekt');
+    }
 }
 
 // конец скрипта врещения изображений блока rules при прокрутке 
