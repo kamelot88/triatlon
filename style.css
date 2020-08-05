@@ -333,6 +333,7 @@ header {
     background-color: #212121;
     position: fixed;
     margin-top: -13vh;
+    z-index: 15;
 }
 .hamburger {
   height: 3.5vh;
@@ -437,15 +438,52 @@ h2 {
 }
 .nedra {
     width: 100%;
-    height: auto;
+    height: 43vh;
     margin-top: 13vh;
-    
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(img/regnum_picture_1574054381425780_normal.jpg);
 }
-.nedra img {
+/*Анимация блока nedra*/
+.nedra {
+	animation: slidesow 20s linear infinite 1s;
+	backface-visibility: hidden;
+}
+@-webkit-keyframes slidesow {
+	0%
+	{
+		background-image: url(img/regnum_picture_1574054381425780_normal.jpg);
+		animation-timing-function: ease-in-out;
+	}
+  25%
+	{
+		background-image: url(img/LkU\ 7168.jpg);
+		animation-timing-function: ease-in-out;
+  }
+  50%
+	{
+		background-image: url(img/LkU\ 7162.jpg);
+		animation-timing-function: ease-in-out;
+	}
+  75%
+	{
+		background-image: url(img/LkU\ 7178.jpg);
+		animation-timing-function: ease-in-out;
+  }
+  100%
+	{
+		background-image: url(img/LkU\ 7177.jpg);
+		animation-timing-function: ease-in-out;
+	}
+}
+
+/* .nedra img {
     max-width: 100%;
     width: 100%;
     height: auto;
-}
+} */
 #information {
   width: 100%;
 }
@@ -504,7 +542,7 @@ h2 {
 }
 
 .effekt {
-  transition: all 0.75s ease;
+  transition: all 1.5s ease;
     transform-origin: center center;
     -webkit-transform-origin: center center;
     -moz-transform-origin: center center;

@@ -66,12 +66,12 @@ var burpee = document.querySelector("#rules > div.burpee.main_flex__nowrap.flex_
 var scrollTop = window.pageYOffset;
 window.onscroll = function () {
     var scrollTop = window.pageYOffset;
-    if (scrollTop >= 1100 && scrollTop < 1200) {
+    if (scrollTop >= 1050 && scrollTop < 1250) {
         pullUp.classList.add('effekt');
         bruss.classList.remove('effekt');
         burpee.classList.remove('effekt');
     }
-    if (scrollTop >= 1200 && scrollTop < 1370) {
+    if (scrollTop >= 1250 && scrollTop < 1450) {
         pullUp.classList.remove('effekt');
         bruss.classList.add('effekt');
         burpee.classList.remove('effekt');
@@ -81,7 +81,7 @@ window.onscroll = function () {
         bruss.classList.remove('effekt');
         burpee.classList.add('effekt');
     }
-    if (scrollTop > 1100 && scrollTop > 1650) {
+    if (scrollTop > 1050 && scrollTop > 1650) {
         pullUp.classList.remove('effekt');
         bruss.classList.remove('effekt');
         burpee.classList.remove('effekt');
