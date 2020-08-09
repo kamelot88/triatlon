@@ -1,91 +1,118 @@
-// начало скрипта бургер-меню
-var hamburger = document.querySelector("#main > div.hamburger.main_flex_column.flex__jcontent_between");
+//дожидаемся полной загрузки страницы
+window.onload = function () {
 
-var nav = document.querySelector("body > header > div.navigation");
+    // начало скрипта бургер-меню
+    var hamburger = document.querySelector("#main > div.hamburger.main_flex_column.flex__jcontent_between");
 
-var logo = document.querySelector("body > header > div.navigation > nav > div");
+    var nav = document.querySelector("body > header > div.navigation");
 
-var whiteFill = document.querySelector("#white_fill");
+    var logo = document.querySelector("body > header > div.navigation > nav > div");
 
-hamburger.addEventListener('click', function () {
-    if (nav.style.display === 'block') {
+    var whiteFill = document.querySelector("#white_fill");
+
+    hamburger.addEventListener('click', function () {
+        if (nav.style.display === 'block') {
+            nav.style.display = 'none';
+            whiteFill.style.display = 'none';
+            hamburger.classList.remove('other');
+            hamburger.classList.remove('rotation');
+            logo.classList.remove('other2');
+            // hamburger.classList.remove('rotation');
+            // logo.style.marginLeft = 'calc(50% - 70px)';
+        } else {
+            nav.style.display = 'block';
+            whiteFill.style.display = 'block';
+            hamburger.classList.add('other');
+            hamburger.classList.add('rotation');
+            logo.classList.add('other2');
+
+            // hamburger.classList.add('rotation');
+            // logo.style.marginLeft = '30px';
+        }
+    });
+
+    whiteFill.addEventListener('click', function () {
         nav.style.display = 'none';
         whiteFill.style.display = 'none';
         hamburger.classList.remove('other');
         hamburger.classList.remove('rotation');
         logo.classList.remove('other2');
-        // hamburger.classList.remove('rotation');
-        // logo.style.marginLeft = 'calc(50% - 70px)';
-    } else {
-        nav.style.display = 'block';
-        whiteFill.style.display = 'block';
-        hamburger.classList.add('other');
-        hamburger.classList.add('rotation');
-        logo.classList.add('other2');
+    });
+    // конец скрипта открытия/закрытия бургер-меню
 
-        // hamburger.classList.add('rotation');
-        // logo.style.marginLeft = '30px';
-    }
-});
+    // начало скрипта формы регистрации
 
-whiteFill.addEventListener('click', function () {
-    nav.style.display = 'none';
-    whiteFill.style.display = 'none';
-    hamburger.classList.remove('other');
-    hamburger.classList.remove('rotation');
-    logo.classList.remove('other2');
-});
-// конец скрипта открытия/закрытия бургер-меню
+    var buttonForm = document.querySelector("#contakt > button");
+    var modalBox = document.querySelector("#modal_box");
+    var blackFill = document.querySelector("#black_fill");
+    var closeD = document.querySelector("#close_modal");
 
-// начало скрипта формы регистрации
+    buttonForm.addEventListener('click', function () {
+        modalBox.style.display = 'block';
+        blackFill.style.display = 'block';
+    });
 
-var buttonForm = document.querySelector("#contakt > button");
-var modalBox = document.querySelector("#modal_box");
-var blackFill = document.querySelector("#black_fill");
-var closeD = document.querySelector("#close_modal");
+    closeD.addEventListener('click', function () {
+        modalBox.style.display = 'none';
+        blackFill.style.display = 'none';
+    });
 
-buttonForm.addEventListener('click', function () {
-    modalBox.style.display = 'block';
-    blackFill.style.display = 'block';
-});
-
-closeD.addEventListener('click', function () {
-    modalBox.style.display = 'none';
-    blackFill.style.display = 'none';
-});
-
-// конец скрипта формы регистрации
+    // конец скрипта формы регистрации
 
 
-// скрипт врещения изображений блока rules при прокрутке 
+    // скрипт врещения изображений блока rules при прокрутке 
 
-var pullUp = document.querySelector("#rules > div.pullUp.main_flex__nowrap.flex__jcontent_between.flex__align-items_center > img");
-var bruss = document.querySelector("#rules > div:nth-child(6) > img");
-var burpee = document.querySelector("#rules > div.burpee.main_flex__nowrap.flex__jcontent_between.flex__align-items_center > img");
+    var pullUp = document.querySelector("#rules > div.pullUp.main_flex__nowrap.flex__jcontent_between.flex__align-items_center > img");
+    var bruss = document.querySelector("#rules > div:nth-child(6) > img");
+    var burpee = document.querySelector("#rules > div.burpee.main_flex__nowrap.flex__jcontent_between.flex__align-items_center > img");
 
-var scrollTop = window.pageYOffset;
-window.onscroll = function () {
     var scrollTop = window.pageYOffset;
-    if (scrollTop >= 1050 && scrollTop < 1250) {
-        pullUp.classList.add('effekt');
-        bruss.classList.remove('effekt');
-        burpee.classList.remove('effekt');
+    window.onscroll = function () {
+        var scrollTop = window.pageYOffset;
+        if (scrollTop >= 1290 && scrollTop < 1450) {
+            pullUp.classList.add('effekt');
+            bruss.classList.remove('effekt');
+            burpee.classList.remove('effekt');
+        }
+        if (scrollTop >= 1450 && scrollTop < 1600) {
+            pullUp.classList.remove('effekt');
+            bruss.classList.add('effekt');
+            burpee.classList.remove('effekt');
+        }
+        if (scrollTop >= 1600 && scrollTop < 1900) {
+            pullUp.classList.remove('effekt');
+            bruss.classList.remove('effekt');
+            burpee.classList.add('effekt');
+        }
+        if (scrollTop > 1290 && scrollTop > 1900) {
+            pullUp.classList.remove('effekt');
+            bruss.classList.remove('effekt');
+            burpee.classList.remove('effekt');
+        }
     }
-    if (scrollTop >= 1250 && scrollTop < 1450) {
-        pullUp.classList.remove('effekt');
-        bruss.classList.add('effekt');
-        burpee.classList.remove('effekt');
-    }
-    if (scrollTop >= 1450 && scrollTop < 1650) {
-        pullUp.classList.remove('effekt');
-        bruss.classList.remove('effekt');
-        burpee.classList.add('effekt');
-    }
-    if (scrollTop > 1050 && scrollTop > 1650) {
-        pullUp.classList.remove('effekt');
-        bruss.classList.remove('effekt');
-        burpee.classList.remove('effekt');
-    }
-}
+    // конец скрипта врещения изображений блока rules при прокрутке 
 
-// конец скрипта врещения изображений блока rules при прокрутке 
+
+    var STRV = document.querySelector("#contakt > div:nth-child(5) > img");
+
+    //вешаем события при наведении на кнопку регистрации 
+    buttonForm.onmouseout = function (e) {
+        STRV.classList.add('strelka');
+    }
+    buttonForm.onmouseover = function (e) {
+        STRV.classList.remove('strelka');
+    };
+
+    var phoneNumber = document.querySelector("#contakt > div.main_flex.flex__align-content_center.flex__jcontent_center > a");
+    var phone = document.querySelector("#contakt > div.main_flex.flex__align-content_center.flex__jcontent_center > img");
+
+    //вешаем события при наведении на кнопку регистрации 
+    phoneNumber.onmouseout = function (e) {
+        phone.classList.remove('rotation2');
+        phone.style.transition = '1s .5s';
+    }
+    phoneNumber.onmouseover = function (e) {
+        phone.classList.add('rotation2');
+    };
+
+}
