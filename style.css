@@ -323,11 +323,11 @@ body {
         color: #ffffff;
     }
     header {
-      height: 15vh;
+      height: 10vw;
       width: 100%;
       background-color: #212121;
       position: fixed;
-      margin-top: -15vh;
+      top: 0;
       z-index: 15;
       box-shadow: 1px 7px 13px 8px black;
   }
@@ -372,13 +372,13 @@ body {
     align-content: center;
     height: 100%;
     width: 50vw;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     position: absolute;
     right: 6vw;
     top: 0;
     z-index: 16;
     /* text-transform: uppercase; */
-    font-weight: bold;
+    font-weight: 700;
   }
   nav li {
     text-align: center;
@@ -410,12 +410,12 @@ body {
   }
   .logo h1{
       color: #ff3448;
-      font-size: 3vw;
+      font-size: 2.5vw;
       font-weight: 900;
       letter-spacing: .05em;
   }
   .logo h2 {
-    font-size: 1vw;
+    font-size: .7vw;
   }
   h2 {
       font-size: 2.5vw;
@@ -425,7 +425,6 @@ body {
   }
   .logo_miner {
     z-index: 9;
-    height: 6vh;
     width: 3vw;
   } 
   .logo_miner:hover {
@@ -458,8 +457,8 @@ body {
   .nedra {
       width: 100%;
       height: 85vh;
-      margin-top: 15vh;
       position: relative;
+      margin-top: 10vw;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -534,7 +533,7 @@ body {
   #rules div {
     width: 100%;
     padding: 0vh 20vw 0vh 20vw;
-    height: 30vh;
+    height: 35vh;
   }
   #rules p {
     margin: 0 0vw 0 4vw;
