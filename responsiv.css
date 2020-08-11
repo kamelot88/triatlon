@@ -34,11 +34,7 @@
     z-index: 16;
   }
   nav {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-content: center;
-    height: 50.5vh;
+    height: 57vh;
     width: 48vw;
     font-size: 4vw;
     background-color: rgb(3, 3, 3, .9);
@@ -48,6 +44,13 @@
     z-index: 16;
     box-shadow:  0 0 12px 14px black;
     border-radius: 3px;
+  }
+  nav ul {
+    height: 47vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: center;
   }
   nav li {
     text-align: center;
@@ -130,7 +133,7 @@
     animation: slidesow 20s linear infinite 1s;
     backface-visibility: hidden;
   }
-  @-webkit-keyframes slidesow {
+  @keyframes slidesow {
     0%
     {
       background-image: url(img/regnum_picture_1574054381425780_normal.jpg);
@@ -473,11 +476,7 @@
     z-index: 16;
   }
   nav {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-content: center;
-    height: 50.5vh;
+    height: 57vh;
     width: 48vw;
     font-size: 4vw;
     background-color: rgb(3, 3, 3, .9);
@@ -487,6 +486,13 @@
     z-index: 16;
     box-shadow:  0 0 12px 14px black;
     border-radius: 3px;
+  }
+  nav ul {
+    height: 47vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: center;
   }
   nav li {
     text-align: center;

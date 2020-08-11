@@ -382,6 +382,13 @@ body {
     /* text-transform: uppercase; */
     font-weight: 700;
   }
+  nav ul {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+  }
   nav li {
     text-align: center;
   }
@@ -471,7 +478,7 @@ body {
     animation: slidesow 20s linear infinite 1s;
     backface-visibility: hidden;
   }
-  @-webkit-keyframes slidesow {
+  @keyframes slidesow {
     0%
     {
       background-image: url(img/regnum_picture_1574054381425780_normal.jpg);

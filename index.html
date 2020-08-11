@@ -3,26 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Сила в спорте</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsiv.css">
 </head>
 
 <body>
-    <header class=" main_flex flex__jcontent_around">
+    <header class="main_flex flex__jcontent_around">
         <div class="navigation">
             <nav>
                 <div class="logo_dtek">
                     <img src="img/logo.svg" alt="">
                 </div>
-                <li><a href="#first">Главная</a></li>
-                <li class="bold"></li>
-                <li><a href="#information">Общая информация</a></li>
-                <li class="bold"></li>
-                <li><a href="#rules">Правила турнира</a></li>
-                <li class="bold"></li>
-                <li><a href="#contakt">Участвовать</a></li>
+                <ul class="">
+                    <li><a href="#first">Главная</a></li>
+                    <li class="bold"></li>
+                    <li><a href="#information">Общая информация</a></li>
+                    <li class="bold"></li>
+                    <li><a href="#rules">Правила турнира</a></li>
+                    <li class="bold"></li>
+                    <li><a href="#contakt">Участвовать</a></li>
+                </ul>
             </nav>
         </div>
         <div id="white_fill"></div>
@@ -49,7 +52,7 @@
     <div class="nedra" id="first">
         <!-- <img src="img/regnum_picture_1574054381425780_normal.jpg" alt="фото шахтёров в шахте"> -->
     </div>
-    <main id="information" class="main_flex_column flex__align-content_center">
+    <div id="information" class="main_flex_column flex__align-content_center">
         <div class=" main_flex flex__jcontent_between flex__align-items_center">
             <img src="img/3.jpg" alt="">
             <p>Молодёжное движение ДТЭК Энерго <br> 30 августа 2020 года организовует для работников
@@ -74,7 +77,7 @@
             </p>
             <img src="img/4.jpg" alt="">
         </div>
-    </main>
+    </div>
 
     <main id="rules" class="main_flex_column flex__align-content_center">
         <h2><b>Правила проведения<br> турнира</b></h2> <br>
@@ -108,10 +111,7 @@
         </div>
     </main>
 
-
-
-
-    <main id="contakt" class=" main_flex_column flex__align-content_center">
+    <div id="contakt" class=" main_flex_column flex__align-content_center">
         <h2><b>запись для участия</b></h2><br>
         <h3>Если ты решил принять участие, <br>то жми сюда</h3> <br>
         <div class=" main_flex flex__jcontent_center">
@@ -132,7 +132,8 @@
             <a href="tel:+380663256666" class=" main_flex flex__align-content_center">+380663256666</a>
         </div>
         <p class="end">(как всегда - спроси Марию)</p><br>
-    </main>
+    </div>
+
     <footer class=" main_flex flex__jcontent_between flex__align-content_center">
         <div class="cop main_flex flex__align-content_center">
             <p>©2020 <br> <br><span class="small">все права <br> защищены</span> </p>
@@ -171,7 +172,7 @@
                 </div>
                 <div class="select">
                     <select size="1" required>
-                        <option>Выбери свой участок</option>
+                        <option value="">Выбери свой участок</option>
                         <option value="№1">№1</option>
                         <option value="№2">№2</option>
                         <option value="№3">№3</option>
@@ -205,10 +206,10 @@
                     </select>
                 </div>
                 <div class="input">
-                    <input name="name" maxlength="165" placeholder="Введи своё Ф.И.О."></input>
+                    <input name="name" maxlength="165" placeholder="Введи своё Ф.И.О.">
                 </div>
                 <div class="input">
-                    <input name="message" maxlength="165" placeholder="Номер твоего мобильного"></input>
+                    <input name="message" maxlength="165" placeholder="Номер твоего мобильного">
                 </div>
                 <div class="input">
                     <button type="submit" name="send" class="btn1 send" id="comment-add">
