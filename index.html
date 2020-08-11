@@ -166,12 +166,13 @@
         </div>
 
         <div class="login_box main_flex flex__jcontent_around flex__align-items_center">
-            <form method="post" class="main_flex_column_nw flex__jcontent_center flex__align-items_center">
+            <form action="send.php" method="post"
+                class="main_flex_column_nw flex__jcontent_center flex__align-items_center">
                 <div class="login_label">
                     Регистрация участника
                 </div>
                 <div class="select">
-                    <select size="1" required>
+                    <select size="1" required name="Uchastok">
                         <option value="">Выбери свой участок</option>
                         <option value="№1">№1</option>
                         <option value="№2">№2</option>
@@ -206,10 +207,10 @@
                     </select>
                 </div>
                 <div class="input">
-                    <input name="name" maxlength="165" placeholder="Введи своё Ф.И.О.">
+                    <input name="FIO" maxlength="45" placeholder="Введи своё Ф.И.О.">
                 </div>
                 <div class="input">
-                    <input name="message" maxlength="165" placeholder="Номер твоего мобильного">
+                    <input name="Phone" maxlength="12" placeholder="Номер твоего мобильного">
                 </div>
                 <div class="input">
                     <button type="submit" name="send" class="btn1 send" id="comment-add">
