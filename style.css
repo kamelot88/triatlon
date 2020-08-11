@@ -318,6 +318,8 @@
     /* Начало общих стилей*/
 body {
     font-family: "Lato - Bold", sans-serif;
+    margin: 0;
+    min-height: 100vh;
 }
 .col_white {
         color: #ffffff;
