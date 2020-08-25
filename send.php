@@ -83,8 +83,8 @@ $phone = trim($phone);
             }
         }
         @media (min-width: 320px) and (max-width: 374px) {
-            ody {
-                font-size: 4.5vw;
+            body {
+                font-size: 5.5vw;
                 padding-top: 25vh;
             }
             .btn_back {

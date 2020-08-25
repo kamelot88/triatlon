@@ -770,3 +770,27 @@ body {
   }
     /* Конец стилей для формы отправки коментария */
     
+
+
+    /* Начало стилей для Таймера */
+    @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+    .timer-body {
+      /* position: absolute;
+      top: 0;
+      left: -15px; */
+      font-weight: 700;
+      font-size: 2vw;
+      text-align: center;
+      width: auto;
+      line-height: 1.25;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      margin: 0 auto;
+      padding: 0;
+    }
+    
+    .timer-body__number {
+      font-size: 1.15em;
+    }
+    /* Конец стилей для Таймера */

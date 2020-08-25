@@ -158,6 +158,9 @@
     height: 70vh;
   }
   /* Конец стилей для формы отправки коментария */
+  .timer-body {
+    font-size: 4vw;
+  }
 }
     
     
@@ -328,6 +331,9 @@
     width: 100%;
   }
   /* Конец стилей для формы отправки коментария */
+  .timer-body {
+    font-size: 4vw;
+  }
 }
 @media (min-width: 320px) and (max-width: 374px) {
   header {
@@ -493,6 +499,9 @@
   }
   .login_box {
     width: 100%;
+  }
+  .timer-body {
+    font-size: 4vw;
   }
 
 }
